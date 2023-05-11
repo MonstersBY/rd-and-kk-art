@@ -1,0 +1,101 @@
+.student-work {
+    margin-bottom: 23rem;
+    
+    .container {
+        width: 100%;
+        position: relative;
+    }
+    &__title {
+        font-family: 'Austin Cyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 110%;
+        width: 160rem;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
+    &__slide {
+        background: #FEFCF8;
+        border-radius: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.6rem;
+    }
+    &__head {
+        display: flex;
+        margin: 1.7rem 1.6rem 2.4rem;
+    }
+    &__icon {
+        width: 5.6rem;
+        height: 5.6rem;
+        margin-right: 1.6rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+        }
+        &-date {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: #6D6D6D;
+            margin-top: -0.5rem;
+        }
+    }
+    &__link {
+        appearance: button;
+        border: 2px solid #A56429;
+        border-radius: 5.5rem;
+        margin-left: auto;
+        width: 16.4rem;
+        height: min-content;
+        padding: 1.6rem 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #A56429;
+    }
+    &__text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 150%;
+        margin: 0 1.6rem 3.3rem;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__btn-next, &__btn-prev {
+        background-image: url(../img/icon/arrowrightbrown.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 9rem;
+        height: 1.2rem;
+        top: 4.6rem;
+
+        &::after{
+            content: unset;
+        }
+    }
+    &__btn-next {
+        right: 15.5rem;
+    }
+    &__btn-prev {
+        right: 27rem;
+        left: inherit;
+        transform: rotate(180deg);
+    }
+}

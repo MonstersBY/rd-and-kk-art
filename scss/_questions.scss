@@ -1,0 +1,100 @@
+.questions {
+    margin-bottom: 16rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 57.5rem;
+        height: 64.4rem;
+
+        img {
+            mix-blend-mode: darken;
+        }
+    }
+    &__modul {
+        width: 91.5rem;
+    }
+    &__title {
+        font-family: 'Austin Cyr';
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 110%;
+        margin-bottom: 6.4rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__item {
+        width: 100%;
+        position: relative;
+        background: #FEFCF8;
+        border-radius: 3.2rem;
+
+        &.active {
+            .questions__item {
+                &-text {
+                    display: block;
+                    padding-bottom: 2rem;
+                    height: 6.6rem;
+                }
+
+                &-icon {
+                    background-color: #1F212C;
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 3.8rem 0 3.2rem;
+            height: 8rem;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+        }
+        &-icon {
+            position: relative;
+            width: 2.9rem;
+            height: 2.9rem;
+            background-color: #A56429;
+            border-radius: 2rem;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 1.35rem;
+                width:  2rem;
+                background-image: url(../img/icon/arrowdownwhite2.svg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                left: 0;
+                right: 0;
+                top: 28.5%;
+                margin: 0 auto;
+                transition: 0.5s;
+            }
+        }
+        &-text {
+            width: 64.4rem;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 125%;
+            margin-left: 3.2rem;
+            transition: all 0.5s;
+            padding-bottom: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all .5s;
+        }
+    }
+}

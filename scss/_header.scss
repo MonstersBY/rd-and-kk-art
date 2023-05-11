@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    padding-top: 3.5rem;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 9.8rem;
+        height: 4.2rem;
+    }
+    &__right {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        margin-right: 38.6rem;
+
+        &-item {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            color: #FEFCF8;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+}

@@ -1,0 +1,80 @@
+.baner {
+    margin-bottom: 20rem;
+    .container {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        background: #00000033;
+    }
+    &__info {
+        position: absolute;
+        color: #FEFCF8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 122.9rem;
+        left: 0;
+        right: 0;
+        top: 35.5%;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+    &__title {
+        font-family: 'Austin Cyr';
+        font-weight: 700;
+        font-size: 10rem;
+        line-height: 100%;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-align: center;
+    }
+    &__btn {
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        border: 2px solid #FEFCF8;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        bottom: 8.5%;
+        margin: 0 auto;
+        overflow: hidden;
+        &::after{
+            position: absolute;
+            content: '';
+            height: 3.2rem;
+            width: 3.2rem;
+            background-image: url(../img/icon/arrowdownwhite1.svg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            left: 0;
+            right: 0;
+            top: 28.5%;
+            margin: 0 auto;
+            transform: rotate(45deg);
+        }
+        &:hover:after{
+            animation: aniArrow 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@keyframes aniArrow {
+    0% {
+      transform: rotatez(45deg) translateY(-5.5rem) translateX(-5.5rem);
+    }
+    100% {
+      transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+    }
+}

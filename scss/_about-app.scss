@@ -1,0 +1,29 @@
+.about-app {
+    margin-bottom: 17rem;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6.6rem;
+    }
+    &__title {
+        font-family: 'Austin Cyr';
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 110%;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 150%;
+        width: 72.8rem;
+    }
+    &__video {
+        width: 100%;
+        height: 78.9rem;
+
+        img {
+            border-radius: 3.2rem;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.fixed-link {
+    position: fixed;
+    z-index: 10;
+    right: 16rem;
+    top: 2rem;
+
+    &__main {
+        appearance: button;
+        margin: 0 auto;
+        background: #FEFCF8;
+        width: 34.6rem;
+        height: 7.3rem;
+        border-radius: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.2rem;
+
+        &-text {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            color: #A56429;
+        }
+        &-icon {
+            position: relative;
+            width: 2.7rem;
+            height: 2.7rem;
+            background-color: #A56429;
+            border-radius: 2rem;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 1.35rem;
+                width:  2rem;
+                background-image: url(../img/icon/arrowdownwhite2.svg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                left: 0;
+                right: 0;
+                top: 28.5%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

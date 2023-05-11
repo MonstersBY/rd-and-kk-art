@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy-medium.ttf');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('gilroy-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('gilroy-bold.ttf');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('gilroy-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('gilroy-semibold.ttf');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('gilroy-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Austin Cyr';
+    src: url('AustinCyr-Bold.otf');
+    src: local('Austin Cyr Bold'), local('Austin-Cyr-Bold'),
+    url('AustinCyr-Bold.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}

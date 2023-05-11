@@ -1,0 +1,139 @@
+.reviews {
+    margin-bottom: 18rem;
+
+    .container {
+        display: flex;
+        width: auto;
+        margin-right: 0;
+        margin-left: 16rem;
+        justify-content: space-between;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        width: 85rem;
+        // margin-right: 8.5rem;
+
+        &-title {
+            font-family: 'Austin Cyr';
+            font-weight: 700;
+            font-size: 6rem;
+            line-height: 110%;
+            margin-bottom: 2.4rem;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            margin-bottom: 9rem;
+        }
+
+        &-rating {
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                width: 4rem;
+                height: 4.1rem;
+                margin-right: 1rem;
+                margin-top: 1.2rem;
+            }
+            &-number {
+                font-family: 'Austin Cyr';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 6rem;
+                line-height: 125%;
+                text-transform: uppercase;
+                margin-right: 2rem;
+            }
+            &-line {
+                height: 5.8rem;
+                width: 2px;
+                background-color: #1F212C;
+                margin-right: 1.5rem;
+            }
+            &-text {
+                width: 39.5rem;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 125%;
+            }
+        }
+    }
+    &__container {
+        width: 82.5rem;
+        position: relative;
+    }
+    &__slide {
+        background: #FEFCF8;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        padding: 4.5rem 4.4rem 5.1rem;
+
+        &-text {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 125%;
+            margin-bottom: 2rem;
+        }
+        &-bottom {
+            display: flex;
+
+            &-icon {
+                width: 6.5rem;
+                height: 6.5rem;
+                
+                img {
+                    border-radius: 50%;
+                }
+            }
+            &-info {
+                display: flex;
+                flex-direction: column;
+            }
+            &-name {
+                font-weight: 500;
+                font-size: 2.4rem;
+                line-height: 150%;
+            }
+            &-course {
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 120%;
+                color: #6D6D6D;
+            }
+        }
+    }
+    &__stars {
+        display: flex;
+        margin-bottom: 3.783rem;
+    }
+    &__star {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    &__btn-next, &__btn-prev {
+        background-image: url(../img/icon/arrowrightbrown.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 9rem;
+        height: 1.2rem;
+        top: 42.6rem;
+
+        &::after{
+            content: unset;
+        }
+    }
+    &__btn-next {
+        right: 15.5rem;
+    }
+    &__btn-prev {
+        right: 27rem;
+        left: inherit;
+        transform: rotate(180deg);
+    }
+}

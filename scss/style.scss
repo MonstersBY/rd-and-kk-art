@@ -1,0 +1,26 @@
+@import "set";
+
+@import "header";
+@import "footer";
+
+@import "baner";
+@import "about-app";
+@import "app-look";
+@import "frames";
+@import "questions";
+@import "student-work";
+@import "reviews";
+@import "about-us";
+@import "fixed-link";
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}

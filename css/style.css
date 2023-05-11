@@ -1,0 +1,1276 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Gilroy";
+  font-size: 0.5208335vw;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: #1F212C;
+  background-color: #F1E6D7;
+}
+
+input,
+textarea {
+  -webkit-animation: bugfix infinite 1s;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+a {
+  color: unset;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+button:active,
+input:active,
+a:active,
+textarea:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 160rem;
+  margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+section {
+  margin-bottom: 20rem;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 5px;
+    font-size: 1.5625vw;
+    font-size: 1.3333333333vw;
+    -webkit-text-size-adjust: none;
+  }
+  body {
+    -webkit-text-size-adjust: none;
+  }
+  .container {
+    padding: 0 4rem;
+    width: 100%;
+  }
+}
+.header {
+  position: absolute;
+  padding-top: 3.5rem;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  width: 9.8rem;
+  height: 4.2rem;
+}
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 38.6rem;
+}
+.header__right-item {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #FEFCF8;
+}
+
+.footer {
+  margin-bottom: 17rem;
+}
+.footer__img {
+  width: 35rem;
+  height: 36.6rem;
+  margin: 0 auto;
+  margin-bottom: 6.6rem;
+}
+.footer__img img {
+  mix-blend-mode: darken;
+}
+.footer__title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.footer__text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #6D6D6D;
+  margin-bottom: 4.8rem;
+}
+.footer__links {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__link {
+  height: 11.7rem;
+}
+.footer__link:nth-child(1) {
+  width: 34.871rem;
+}
+.footer__link:nth-child(2) {
+  width: 39rem;
+}
+
+.baner {
+  margin-bottom: 20rem;
+}
+.baner .container {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.baner__img {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.baner__info {
+  position: absolute;
+  color: #FEFCF8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 122.9rem;
+  left: 0;
+  right: 0;
+  top: 35.5%;
+  margin: 0 auto;
+  gap: 3rem;
+}
+.baner__title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 100%;
+}
+.baner__text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+}
+.baner__btn {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid #FEFCF8;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  bottom: 8.5%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.baner__btn::after {
+  position: absolute;
+  content: "";
+  height: 3.2rem;
+  width: 3.2rem;
+  background-image: url(../img/icon/arrowdownwhite1.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 28.5%;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.baner__btn:hover:after {
+  -webkit-animation: aniArrow 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+          animation: aniArrow 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+.baner__btn a {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes aniArrow {
+  0% {
+    -webkit-transform: rotatez(45deg) translateY(-5.5rem) translateX(-5.5rem);
+            transform: rotatez(45deg) translateY(-5.5rem) translateX(-5.5rem);
+  }
+  100% {
+    -webkit-transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+            transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+  }
+}
+
+@keyframes aniArrow {
+  0% {
+    -webkit-transform: rotatez(45deg) translateY(-5.5rem) translateX(-5.5rem);
+            transform: rotatez(45deg) translateY(-5.5rem) translateX(-5.5rem);
+  }
+  100% {
+    -webkit-transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+            transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+  }
+}
+.about-app {
+  margin-bottom: 17rem;
+}
+.about-app__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.6rem;
+}
+.about-app__title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+}
+.about-app__text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  width: 72.8rem;
+}
+.about-app__video {
+  width: 100%;
+  height: 78.9rem;
+}
+.about-app__video img {
+  border-radius: 3.2rem;
+}
+
+.app-look {
+  margin-bottom: 17rem;
+}
+.app-look .container {
+  width: 100%;
+}
+.app-look__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.app-look__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 86rem;
+}
+.app-look__item:first-child img {
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+.app-look__item:last-child img {
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+.app-look__item img {
+  width: auto;
+  height: 100%;
+  border-radius: 4rem;
+}
+.app-look__item.center {
+  height: 102.4rem;
+}
+
+.frames__first {
+  display: -ms-grid;
+  display: grid;
+  gap: 3.8rem;
+  -ms-grid-columns: 91.8rem 3.8rem auto;
+  grid-template-columns: 91.8rem auto;
+  -ms-grid-rows: 58.1rem 3.8rem 27.3rem 3.8rem 27.3rem;
+  grid-template-rows: 58.1rem 27.3rem 27.3rem;
+  margin-bottom: 3.8rem;
+}
+
+.frames__first > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.frames__first > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.frames__first > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.frames__first > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.frames__first > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.frames__first > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.frames__first-item {
+  border-radius: 3.2rem;
+  background-color: #FEFCF8;
+  position: relative;
+}
+.frames__first-item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frames__first-link {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #A56429;
+  margin-top: 5.9rem;
+}
+.frames__first-title {
+  margin: 0 auto;
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 100%;
+  text-align: center;
+  width: 76.8rem;
+}
+.frames__first-main-img {
+  margin: 0 auto;
+  width: 73.8rem;
+}
+.frames__first-back-text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 125%;
+  text-align: center;
+  color: #FFFFFF;
+  width: 52rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 3.2rem;
+}
+.frames__first-back-img {
+  width: 100%;
+  height: 100%;
+}
+.frames__first-back-img img {
+  border-radius: 3.2rem;
+  width: 100%;
+  height: 100%;
+}
+.frames__first-animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5.3rem;
+  padding-right: 4.5rem;
+}
+.frames__first-animation-text {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 125%;
+  width: 33.2rem;
+}
+.frames__first-animation-img {
+  width: 18.4rem;
+}
+.frames__second {
+  display: -ms-grid;
+  display: grid;
+  gap: 3.8rem;
+  -ms-grid-columns: 91.8rem 3.8rem auto;
+  grid-template-columns: 91.8rem auto;
+  -ms-grid-rows: 62.2rem 3.8rem 56.5rem;
+  grid-template-rows: 62.2rem 56.5rem;
+  margin-bottom: 4rem;
+}
+.frames__second > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.frames__second > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.frames__second > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.frames__second > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.frames__second-item {
+  border-radius: 3.2rem;
+  background-color: #FEFCF8;
+  position: relative;
+}
+.frames__second-item:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frames__second-main-img {
+  margin: 0 auto;
+  width: 76.3rem;
+}
+.frames__second-back-text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 125%;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  width: 52rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 3.2rem;
+}
+.frames__second-back-img {
+  width: 100%;
+  height: 100%;
+}
+.frames__second-back-img img {
+  border-radius: 3.2rem;
+  width: 100%;
+  height: 100%;
+}
+.frames__second-animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4.2rem;
+}
+.frames__second-animation .frames__info-title {
+  font-size: 3.4rem;
+  width: 35rem;
+}
+.frames__second-animation-img {
+  width: 26.5rem;
+}
+.frames__info-link {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #A56429;
+  margin-top: 5.9rem;
+  margin-bottom: 1.2rem;
+}
+.frames__info-title {
+  margin: 0 auto;
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 100%;
+  text-align: center;
+  width: 76.8rem;
+}
+.frames__big {
+  position: relative;
+  border-radius: 3.2rem;
+  width: 100%;
+  height: 57.8rem;
+  margin-bottom: 3.8rem;
+}
+.frames__big:last-child .frames__big-info {
+  width: 91.6rem;
+  top: 27.5%;
+}
+.frames__big-img {
+  width: 100%;
+  height: 100%;
+}
+.frames__big-img img {
+  border-radius: 3.2rem;
+}
+.frames__big-info {
+  position: absolute;
+  width: 71.7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 22.5%;
+}
+.frames__big-info-title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 100%;
+  text-align: center;
+  color: #FEFCF8;
+  margin-bottom: 2.4rem;
+}
+.frames__big-info-text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #FEFCF8;
+  opacity: 0.9;
+  margin-bottom: 4.4rem;
+}
+.frames__main-link {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  margin: 0 auto;
+  background: #FEFCF8;
+  width: 34.6rem;
+  height: 7.3rem;
+  border-radius: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3.2rem;
+}
+.frames__main-link-text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #A56429;
+}
+.frames__main-link-icon {
+  position: relative;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #A56429;
+  border-radius: 2rem;
+}
+.frames__main-link-icon::after {
+  position: absolute;
+  content: "";
+  height: 1.35rem;
+  width: 2rem;
+  background-image: url(../img/icon/arrowdownwhite2.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 28.5%;
+  margin: 0 auto;
+}
+
+.questions {
+  margin-bottom: 16rem;
+}
+.questions .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.questions__img {
+  width: 57.5rem;
+  height: 64.4rem;
+}
+.questions__img img {
+  mix-blend-mode: darken;
+}
+.questions__modul {
+  width: 91.5rem;
+}
+.questions__title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  margin-bottom: 6.4rem;
+}
+.questions__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.questions__item {
+  width: 100%;
+  position: relative;
+  background: #FEFCF8;
+  border-radius: 3.2rem;
+}
+.questions__item.active .questions__item-text {
+  display: block;
+  padding-bottom: 2rem;
+  height: 6.6rem;
+}
+.questions__item.active .questions__item-icon {
+  background-color: #1F212C;
+}
+.questions__item.active .questions__item-icon::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.questions__item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3.8rem 0 3.2rem;
+  height: 8rem;
+}
+.questions__item-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+.questions__item-icon {
+  position: relative;
+  width: 2.9rem;
+  height: 2.9rem;
+  background-color: #A56429;
+  border-radius: 2rem;
+}
+.questions__item-icon::after {
+  position: absolute;
+  content: "";
+  height: 1.35rem;
+  width: 2rem;
+  background-image: url(../img/icon/arrowdownwhite2.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 28.5%;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.questions__item-text {
+  width: 64.4rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 125%;
+  margin-left: 3.2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.student-work {
+  margin-bottom: 23rem;
+}
+.student-work .container {
+  width: 100%;
+  position: relative;
+}
+.student-work__title {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  width: 160rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.student-work__slide {
+  background: #FEFCF8;
+  border-radius: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.6rem;
+}
+.student-work__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.7rem 1.6rem 2.4rem;
+}
+.student-work__icon {
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-right: 1.6rem;
+}
+.student-work__icon img {
+  border-radius: 50%;
+}
+.student-work__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.student-work__info-name {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+.student-work__info-date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #6D6D6D;
+  margin-top: -0.5rem;
+}
+.student-work__link {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  border: 2px solid #A56429;
+  border-radius: 5.5rem;
+  margin-left: auto;
+  width: 16.4rem;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1.6rem 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #A56429;
+}
+.student-work__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  margin: 0 1.6rem 3.3rem;
+}
+.student-work__img {
+  width: 100%;
+}
+.student-work__btn-next, .student-work__btn-prev {
+  background-image: url(../img/icon/arrowrightbrown.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 9rem;
+  height: 1.2rem;
+  top: 4.6rem;
+}
+.student-work__btn-next::after, .student-work__btn-prev::after {
+  content: unset;
+}
+.student-work__btn-next {
+  right: 15.5rem;
+}
+.student-work__btn-prev {
+  right: 27rem;
+  left: inherit;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.reviews {
+  margin-bottom: 18rem;
+}
+.reviews .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  margin-right: 0;
+  margin-left: 16rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reviews__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85rem;
+}
+.reviews__head-title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  margin-bottom: 2.4rem;
+}
+.reviews__head-text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  margin-bottom: 9rem;
+}
+.reviews__head-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reviews__head-rating-icon {
+  width: 4rem;
+  height: 4.1rem;
+  margin-right: 1rem;
+  margin-top: 1.2rem;
+}
+.reviews__head-rating-number {
+  font-family: "Austin Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.reviews__head-rating-line {
+  height: 5.8rem;
+  width: 2px;
+  background-color: #1F212C;
+  margin-right: 1.5rem;
+}
+.reviews__head-rating-text {
+  width: 39.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 125%;
+}
+.reviews__container {
+  width: 82.5rem;
+  position: relative;
+}
+.reviews__slide {
+  background: #FEFCF8;
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.5rem 4.4rem 5.1rem;
+}
+.reviews__slide-text {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 125%;
+  margin-bottom: 2rem;
+}
+.reviews__slide-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews__slide-bottom-icon {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.reviews__slide-bottom-icon img {
+  border-radius: 50%;
+}
+.reviews__slide-bottom-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reviews__slide-bottom-name {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+.reviews__slide-bottom-course {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: #6D6D6D;
+}
+.reviews__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3.783rem;
+}
+.reviews__star {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.reviews__btn-next, .reviews__btn-prev {
+  background-image: url(../img/icon/arrowrightbrown.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 9rem;
+  height: 1.2rem;
+  top: 42.6rem;
+}
+.reviews__btn-next::after, .reviews__btn-prev::after {
+  content: unset;
+}
+.reviews__btn-next {
+  right: 15.5rem;
+}
+.reviews__btn-prev {
+  right: 27rem;
+  left: inherit;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.about-us {
+  margin-bottom: 25rem;
+}
+.about-us__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us__title {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+}
+.about-us__text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  width: 78.9rem;
+}
+.about-us__line {
+  position: absolute;
+  top: 5.4rem;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background: #A56429;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(221, 20, 68, 0)), color-stop(30%, #A56429), color-stop(60%, #A56429), to(rgba(221, 20, 68, 0)));
+  background: linear-gradient(90deg, rgba(221, 20, 68, 0) 0%, #A56429 30%, #A56429 60%, rgba(221, 20, 68, 0) 100%);
+}
+.about-us__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7rem;
+  position: relative;
+}
+.about-us__item {
+  width: 25%;
+  position: relative;
+  z-index: 1;
+}
+.about-us__cir-wr {
+  width: 12.2rem;
+  height: 12.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.6rem;
+}
+.about-us__cir-wr.win {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #A56429;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 40px 60px rgba(221, 20, 68, 0.21);
+          box-shadow: 0px 40px 60px rgba(221, 20, 68, 0.21);
+}
+.about-us__cir-wr.win img {
+  width: 4.9rem;
+  height: 4.9rem;
+}
+.about-us__cir {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: 1.5rem solid #A56429;
+  background-color: #fff;
+}
+.about-us__info-num {
+  font-family: "Austin Cyr";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 110%;
+  margin-bottom: 1.2rem;
+}
+.about-us__info-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  width: 32rem;
+}
+
+.fixed-link {
+  position: fixed;
+  z-index: 10;
+  right: 16rem;
+  top: 2rem;
+}
+.fixed-link__main {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  margin: 0 auto;
+  background: #FEFCF8;
+  width: 34.6rem;
+  height: 7.3rem;
+  border-radius: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3.2rem;
+}
+.fixed-link__main-text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #A56429;
+}
+.fixed-link__main-icon {
+  position: relative;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #A56429;
+  border-radius: 2rem;
+}
+.fixed-link__main-icon::after {
+  position: absolute;
+  content: "";
+  height: 1.35rem;
+  width: 2rem;
+  background-image: url(../img/icon/arrowdownwhite2.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 28.5%;
+  margin: 0 auto;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,265 @@
+.frames {
+    &__first {
+        display: grid;
+        gap: 3.8rem;
+        grid-template-columns: 91.8rem auto;
+        grid-template-rows: 58.1rem 27.3rem 27.3rem;
+        margin-bottom: 3.8rem;
+
+        &-item {
+            border-radius: 3.2rem;
+            background-color: #FEFCF8;
+            position: relative;
+
+            &:nth-child(1) {
+                grid-row: 1/4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        &-link {
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            text-align: center;
+            color: #A56429;
+            margin-top: 5.9rem;
+
+        }
+        &-title {
+            margin: 0 auto;
+            font-family: 'Austin Cyr';
+            font-weight: 700;
+            font-size: 5.5rem;
+            line-height: 100%;
+            text-align: center;
+            width: 76.8rem;
+        }
+        &-main-img {
+            margin: 0 auto;
+            width: 73.8rem;
+        }
+        &-back {
+            &-text {
+                position: absolute;
+                font-weight: 500;
+                font-size: 3.2rem;
+                line-height: 125%;
+                text-align: center;
+                color: #FFFFFF;
+                width: 52rem;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 3.2rem;
+            }
+            &-img {
+                width: 100%;
+                height: 100%;
+    
+                img {
+                    border-radius: 3.2rem;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-animation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5.3rem;
+            padding-right: 4.5rem;
+
+            &-text {
+                font-weight: 500;
+                font-size: 3.2rem;
+                line-height: 125%;
+                width: 33.2rem;
+            }
+            &-img {
+                width: 18.4rem;
+            }
+        }
+    }
+    &__second {
+        display: grid;
+        gap: 3.8rem;
+        grid-template-columns: 91.8rem auto;
+        grid-template-rows: 62.2rem 56.5rem;
+        margin-bottom: 4rem;
+
+        &-item {
+            border-radius: 3.2rem;
+            background-color: #FEFCF8;
+            position: relative;
+
+            &:nth-child(1) {
+                grid-row: 1/3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        &-main-img {
+            margin: 0 auto;
+            width: 76.3rem;
+        }
+        &-back {
+            &-text {
+                position: absolute;
+                font-weight: 500;
+                font-size: 3.2rem;
+                line-height: 125%;
+                text-align: center;
+                color: #FFFFFF;
+                letter-spacing: 0.05em;
+                width: 52rem;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 3.2rem;
+            }
+            &-img {
+                width: 100%;
+                height: 100%;
+    
+                img {
+                    border-radius: 3.2rem;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-animation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 4.2rem;
+
+            .frames__info-title {
+                font-size: 3.4rem;
+                width: 35rem;
+            }
+            &-img {
+                width: 26.5rem;
+            }
+        }
+    }
+    &__info {
+        &-link {
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            text-align: center;
+            color: #A56429;
+            margin-top: 5.9rem;
+            margin-bottom: 1.2rem;
+
+        }
+        &-title {
+            margin: 0 auto;
+            font-family: 'Austin Cyr';
+            font-weight: 700;
+            font-size: 5.5rem;
+            line-height: 100%;
+            text-align: center;
+            width: 76.8rem;
+        }
+    }
+    &__big {
+        position: relative;
+        border-radius: 3.2rem;
+        width: 100%;
+        height: 57.8rem;
+        margin-bottom: 3.8rem;
+
+        &:last-child {
+            .frames__big-info {
+                width: 91.6rem;
+                top: 27.5%;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                border-radius: 3.2rem;
+            }
+        }
+        &-info {
+            position: absolute;
+            width: 71.7rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 22.5%;
+            
+            &-title {
+                font-family: 'Austin Cyr';
+                font-weight: 700;
+                font-size: 5.5rem;
+                line-height: 100%;
+                text-align: center;
+                color: #FEFCF8;
+                margin-bottom: 2.4rem;
+            }
+            &-text {
+                font-weight: 500;
+                font-size: 2.4rem;
+                line-height: 150%;
+                text-align: center;
+                color: #FEFCF8;
+                opacity: 0.9;
+                margin-bottom: 4.4rem;
+            }
+        }
+    }
+    &__main-link {
+        appearance: button;
+        margin: 0 auto;
+        background: #FEFCF8;
+        width: 34.6rem;
+        height: 7.3rem;
+        border-radius: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.2rem;
+
+        &-text {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 150%;
+            color: #A56429;
+        }
+        &-icon {
+            position: relative;
+            width: 2.7rem;
+            height: 2.7rem;
+            background-color: #A56429;
+            border-radius: 2rem;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 1.35rem;
+                width:  2rem;
+                background-image: url(../img/icon/arrowdownwhite2.svg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                left: 0;
+                right: 0;
+                top: 28.5%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
