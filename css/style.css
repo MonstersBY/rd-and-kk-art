@@ -241,6 +241,7 @@ section {
 .baner__img {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
+  height: 100.8rem;
 }
 .baner__info {
   position: absolute;
@@ -779,6 +780,7 @@ section {
   position: relative;
   background: #FEFCF8;
   border-radius: 3.2rem;
+  cursor: pointer;
 }
 .questions__item.active .questions__item-text {
   display: block;
