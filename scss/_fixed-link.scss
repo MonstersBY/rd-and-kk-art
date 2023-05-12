@@ -1,6 +1,6 @@
 .fixed-link {
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     right: 16rem;
     top: 2rem;
 
@@ -41,6 +41,39 @@
                 right: 0;
                 top: 28.5%;
                 margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width: 48em) {
+    .fixed-link {
+        position: fixed;
+        z-index: 10;
+        right: 4vw;
+        top: 5vw;
+    
+        &__main {
+            width: 62.7vw;
+            height: 13.87vw;
+            border-radius: 8.5vw;
+            padding: 0 5.3vw;
+    
+            &-text {
+                font-family: 'Gilroy Bold';
+                font-weight: 700;
+                font-size: 4vw;
+                line-height: 120%;
+            }
+            &-icon {
+                width: 7.2vw;
+                height: 7.2vw;
+                border-radius: 50%;
+    
+                &::after {
+                    height: 8.1vw;
+                    width:  2.7vw;
+                    top: 0;
+                }
             }
         }
     }

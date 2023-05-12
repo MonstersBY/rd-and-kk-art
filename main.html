@@ -33,16 +33,21 @@
         <div class="fixed-link__main-icon"></div>
     </a>
 </div>
+<div class="popup">
+    <div class="popup__container">
+
+    </div>
+</div>
 
 <main>
 
     <section class="baner">
         <div class="container">
             <div class="baner__img">
-                <img src="./img/baner.jpg" alt="">
+                <img src="./img/main-baner.jpg" alt="">
             </div>
             <div class="baner__info">
-                <div class="baner__title">Добрая школа Карины Кино теперь в приложении</div>
+                <div class="baner__title">Добрая школа <br class="mobile"> Карины Кино <br class="mobile"> теперь в приложении</div>
                 <div class="baner__text">Эксклюзивные курсы  уже в приложении</div>
             </div>
             <button class="baner__btn">
@@ -55,7 +60,8 @@
         <div class="container">
             <div class="about-app__head">
                 <div class="about-app__title">Подробнее о приложении</div>
-                <div class="about-app__text">Приятный и удобный интерфейс приложения поможет смотреть эксклюзивные курсы, когда вам удобно и в нужном ритме</div>
+                <div class="about-app__text desktop">Приятный и удобный интерфейс приложения поможет смотреть эксклюзивные курсы, когда вам удобно и в нужном ритме</div>
+                <div class="about-app__text mobile">В Доброй школе вы найдёте себе новых друзей и единомышленников, всегда сможете получить совет и помощь. Наши ученики запускают свои свои бренды и становятся художниками.</div>
             </div>
             <div class="about-app__video">
                 <img src="./img/book-video-img.jpg" alt="">
@@ -65,13 +71,33 @@
 
     <section class="app-look">
         <div class="container">
-            <div class="app-look__list">
+            <div class="app-look__list desktop">
                 <div class="app-look__item"><img src="./img/app-look/1.jpg" alt=""></div>
                 <div class="app-look__item"><img src="./img/app-look/2.jpg" alt=""></div>
                 <div class="app-look__item center"><img src="./img/app-look/3.png" alt=""></div>
                 <div class="app-look__item"><img src="./img/app-look/4.jpg" alt=""></div>
                 <div class="app-look__item"><img src="./img/app-look/5.jpg" alt=""></div>
             </div>
+            <div class="swiper-container app-look__swiper mobile">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide app-look__slide">
+                        <div class="app-look__item center"><img src="./img/app-look/3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide app-look__slide">
+                        <div class="app-look__item"><img src="./img/app-look/4.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide app-look__slide">
+                        <div class="app-look__item"><img src="./img/app-look/5-1.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide app-look__slide">
+                        <div class="app-look__item"><img src="./img/app-look/1-1.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide app-look__slide">
+                        <div class="app-look__item"><img src="./img/app-look/2.jpg" alt=""></div>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-pagination app-look__pagination"></div>
         </div>
     </section>
 
@@ -110,7 +136,8 @@
             </div>
             <div class="frames__big">
                 <div class="frames__big-img">
-                    <img src="./img/frame/big-back1.jpg" alt="">
+                    <img class="desktop" src="./img/frame/big-back1.jpg" alt="">
+                    <img class="mobile" src="./img/frame/big-back1-mob.jpg" alt="">
                 </div>
                 <div class="frames__big-info">
                     <div class="frames__big-info-title">Курсы с сопровождением доброй школы</div>
@@ -153,7 +180,8 @@
             </div>
             <div class="frames__big">
                 <div class="frames__big-img">
-                    <img src="./img/frame/big-back2.jpg" alt="">
+                    <img class="desktop" src="./img/frame/big-back2.jpg" alt="">
+                    <img class="mobile" src="./img/frame/big-back2-mob.jpg" alt="">
                 </div>
                 <div class="frames__big-info">
                     <div class="frames__big-info-title">Структура курсов и глубина</div>
@@ -222,7 +250,7 @@
                                 <div class="student-work__info-name">Мария</div>
                                 <div class="student-work__info-date">февраль 2022</div>
                             </div>
-                            <a href="" class="student-work__link">Смотреть</a>
+                            <div class="student-work__link">Смотреть</div>
                         </div>
                         <div class="student-work__text">Работа с курса по акварельной живописи</div>
                         <div class="student-work__img">
@@ -238,11 +266,11 @@
                                 <div class="student-work__info-name">Мария</div>
                                 <div class="student-work__info-date">февраль 2022</div>
                             </div>
-                            <a href="" class="student-work__link">Смотреть</a>
+                            <div class="student-work__link">Смотреть</div>
                         </div>
                         <div class="student-work__text">Работа с курса по акварельной живописи</div>
                         <div class="student-work__img">
-                            <img src="./img/students/img1.jpg" alt="">
+                            <img src="./img/students/img2.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide student-work__slide">
@@ -254,11 +282,11 @@
                                 <div class="student-work__info-name">Мария</div>
                                 <div class="student-work__info-date">февраль 2022</div>
                             </div>
-                            <a href="" class="student-work__link">Смотреть</a>
+                            <div class="student-work__link">Смотреть</div>
                         </div>
                         <div class="student-work__text">Работа с курса по акварельной живописи</div>
                         <div class="student-work__img">
-                            <img src="./img/students/img1.jpg" alt="">
+                            <img src="./img/students/img3.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide student-work__slide">
@@ -270,26 +298,27 @@
                                 <div class="student-work__info-name">Мария</div>
                                 <div class="student-work__info-date">февраль 2022</div>
                             </div>
-                            <a href="" class="student-work__link">Смотреть</a>
+                            <div class="student-work__link">Смотреть</div>
                         </div>
                         <div class="student-work__text">Работа с курса по акварельной живописи</div>
                         <div class="student-work__img">
-                            <img src="./img/students/img1.jpg" alt="">
+                            <img src="./img/students/img4.jpg" alt="">
                         </div>
                     </div>
                 </div>
              </div>
-             <div class="swiper-button-next btn-next student-work__btn-next"></div>
-             <div class="swiper-button-prev btn-prev student-work__btn-prev"></div>
+             <div class="swiper-button-next btn-next student-work__btn-next desktop"></div>
+             <div class="swiper-button-prev btn-prev student-work__btn-prev desktop"></div>
+             <div class="swiper-pagination student-work__pagination mobile"></div>
         </div>
     </section>
 
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews__head">
-                <div class="reviews__head-title">Отзывы<br> о доброй школе</div>
+                <div class="reviews__head-title">Отзывы<br class="desktop"> о доброй школе</div>
                 <div class="reviews__head-text">В Доброй школе вы найдёте себе новых друзей и единомышленников, всегда сможете получить совет и помощь. Наши ученики запускают свои свои бренды и становятся художниками.</div>
-                <div class="reviews__head-rating">
+                <div class="reviews__head-rating desktop">
                     <div class="reviews__head-rating-icon">
                         <img src="./img/icon/arrowupprightbrown.svg" alt="">
                     </div>
@@ -297,9 +326,17 @@
                     <div class="reviews__head-rating-line"></div>
                     <div class="reviews__head-rating-text">Рейтинг школы от чеников, которые прошли обучение в Доброй школе на разных потоках</div>
                 </div>
+                <div class="reviews__head-rating mobile">
+                    <div class="reviews__head-rating-icon">
+                        <img src="./img/icon/arrowupprightbrown.svg" alt="">
+                    </div>
+                    <div class="reviews__head-rating-number">8 000</div>
+                    <div class="reviews__head-rating-line"></div>
+                    <div class="reviews__head-rating-text">Человек прошли бучение в Доброй школе на разных потоках</div>
+                </div>
             </div>
             <div class="reviews__container">
-                <div class="swiper-container reviews__swiper">
+                <div class="swiper-container reviews__swiper desktop">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide reviews__slide">
                             <div class="reviews__stars">
@@ -378,9 +415,90 @@
                             </div>
                         </div>
                     </div>
-                 </div>
-                 <div class="swiper-button-next btn-next reviews__btn-next"></div>
-                 <div class="swiper-button-prev btn-prev reviews__btn-prev"></div>
+                </div>
+                <div class="swiper-container reviews__swiper-mobile mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__stars">
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__slide-text">Кто сомневается- не сомневайтесь! Курс отличный, как и все курсы Карины. Берите с эфирами - потому что много информации там Вы тоже получите! Ну и чат с творческими позитивными людьми- это очень ценно!</div>
+                            <div class="reviews__slide-bottom">
+                                <div class="reviews__slide-bottom-icon">
+                                    <img src="./img/students/acc-icon.jpg" alt="">
+                                </div>
+                                <div class="reviews__slide-bottom-info">
+                                    <div class="reviews__slide-bottom-name">Мария</div>
+                                    <div class="reviews__slide-bottom-course">Курс: Акварельная иллюстрация</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__stars">
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__slide-text">Кто сомневается- не сомневайтесь! Курс отличный, как и все курсы Карины. Берите с эфирами - потому что много информации там Вы тоже получите! Ну и чат с творческими позитивными людьми- это очень ценно!</div>
+                            <div class="reviews__slide-bottom">
+                                <div class="reviews__slide-bottom-icon">
+                                    <img src="./img/students/acc-icon.jpg" alt="">
+                                </div>
+                                <div class="reviews__slide-bottom-info">
+                                    <div class="reviews__slide-bottom-name">Мария</div>
+                                    <div class="reviews__slide-bottom-course">Курс: Акварельная иллюстрация</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__stars">
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__slide-text">Кто сомневается- не сомневайтесь! Курс отличный, как и все курсы Карины. Берите с эфирами - потому что много информации там Вы тоже получите! Ну и чат с творческими позитивными людьми- это очень ценно!</div>
+                            <div class="reviews__slide-bottom">
+                                <div class="reviews__slide-bottom-icon">
+                                    <img src="./img/students/acc-icon.jpg" alt="">
+                                </div>
+                                <div class="reviews__slide-bottom-info">
+                                    <div class="reviews__slide-bottom-name">Мария</div>
+                                    <div class="reviews__slide-bottom-course">Курс: Акварельная иллюстрация</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__stars">
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                                <div class="reviews__star"><img src="./img/icon/starred.svg" alt=""></div>
+                            </div>
+                            <div class="reviews__slide-text">Кто сомневается- не сомневайтесь! Курс отличный, как и все курсы Карины. Берите с эфирами - потому что много информации там Вы тоже получите! Ну и чат с творческими позитивными людьми- это очень ценно!</div>
+                            <div class="reviews__slide-bottom">
+                                <div class="reviews__slide-bottom-icon">
+                                    <img src="./img/students/acc-icon.jpg" alt="">
+                                </div>
+                                <div class="reviews__slide-bottom-info">
+                                    <div class="reviews__slide-bottom-name">Мария</div>
+                                    <div class="reviews__slide-bottom-course">Курс: Акварельная иллюстрация</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next btn-next reviews__btn-next desktop"></div>
+                <div class="swiper-button-prev btn-prev reviews__btn-prev desktop"></div>
+                <div class="swiper-pagination reviews__pagination mobile"></div>
             </div>
         </div>
     </section>

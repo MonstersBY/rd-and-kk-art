@@ -29,4 +29,15 @@
 }
 
 @media (max-width: 48em) {
+    .header {
+        padding-top: 8vw;
+        
+        &__logo {
+            width: 18.4vw;
+            height: 6vw;
+        }
+        &__right {
+            display: none;
+        }
+    }
 }

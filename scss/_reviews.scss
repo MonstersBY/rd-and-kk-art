@@ -85,6 +85,7 @@
             &-icon {
                 width: 6.5rem;
                 height: 6.5rem;
+                margin-right: 1.2rem;
                 
                 img {
                     border-radius: 50%;
@@ -135,5 +136,135 @@
         right: 27rem;
         left: inherit;
         transform: rotate(180deg);
+    }
+}
+@media (max-width: 48em) {
+    .reviews {
+        margin-bottom: 26rem;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            margin-right: 0;
+            margin-left: 0;
+            justify-content: space-between;
+        }
+    
+        &__head {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            margin-bottom: 9vw;
+    
+            &-title {
+                font-size: 8vw;
+                line-height: 125%;
+                margin-bottom: 4.27vw;
+            }
+            &-text {
+                font-size: 4vw;
+                line-height: 120%;
+                margin-bottom: 8.7vw;
+            }
+    
+            &-rating {
+                display: flex;
+                align-items: center;
+    
+                &-icon {
+                    width: 7.2vw;
+                    height: 7.2vw;
+                    margin-right: 1.1vw;
+                    margin-top: 0;
+                }
+                &-number {
+                    font-size: 8vw;
+                    line-height: 125%;
+                    margin-right: 3.2vw;
+                }
+                &-line {
+                    height: 6.7vw;
+                    width: 2px;
+                    margin-right: 2.13vw;
+                }
+                &-text {
+                    width: 55vw;
+                    font-size: 3.2vw;
+                    line-height: 120%;
+                }
+            }
+        }
+        &__container {
+            width: auto;
+            position: relative;
+        }
+        &__slide {
+            background: #FEFCF8;
+            border-radius: 8.5vw;
+            display: flex;
+            flex-direction: column;
+            padding: 4.5rem 4.4rem 5.1rem;
+    
+            &-text {
+                font-weight: 500;
+                font-size: 4vw;
+                line-height: 120%;
+                margin-bottom: 4.3vw;
+            }
+            &-bottom {
+                display: flex;
+    
+                &-icon {
+                    width: 10.1vw;
+                    height: 10.1vw;
+                    margin-right: 3.2vw;
+                    
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+                }
+                &-name {
+                    font-weight: 500;
+                    font-size: 3.2vw;
+                    line-height: 120%;
+                }
+                &-course {
+                    font-weight: 500;
+                    font-size: 3.2vw;
+                    line-height: 120%;
+                }
+            }
+        }
+        &__stars {
+            display: flex;
+            margin-bottom: 4.6vw;
+        }
+        &__star {
+            width: 3.55vw;
+            height: 3.55vw;
+            margin-right: 1.5vw;
+        }
+        &__pagination {
+            bottom: -9vw;
+            left: 40vw;
+
+            .swiper-pagination-bullet {
+                width: 2vw;
+                height: 2vw;
+                display: inline-block;
+                border-radius: 50%;
+                margin-right: 2vw;
+                
+                &-active {
+                    background: #2B2F36;
+                }
+            }
+        }
+    
     }
 }

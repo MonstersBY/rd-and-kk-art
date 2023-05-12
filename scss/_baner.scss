@@ -9,8 +9,6 @@
 
     &__img {
         width: 100%;
-        background: #00000033;
-        height: 100.8rem;
     }
     &__info {
         position: absolute;
@@ -78,5 +76,75 @@
     }
     100% {
       transform: rotatez(45deg) translateY(5.5rem) translateX(5.5rem);
+    }
+}
+
+@media (max-width: 48em) {
+    .baner {
+        margin-bottom: 20rem;
+        .container {
+            padding: 0;
+        }
+    
+        &__img {
+            width: 100%;
+            height: 216vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__info {
+            width: auto;
+            left: 0;
+            right: 0;
+            top: 35.5%;
+            margin: 0 3rem;
+            gap: 4.2vw;
+        }
+        &__title {
+            font-size: 8vw;
+            line-height: 125%;
+        }
+        &__text {
+            font-size: 4vw;
+            line-height: 120%;
+            text-align: center;
+        }
+        &__btn {
+            position: absolute;
+            width: 16.1vw;
+            height: 16.1vw;
+            border: 2px solid #FEFCF8;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 8%;
+            margin: 0 auto;
+            overflow: hidden;
+            &::after{
+                position: absolute;
+                content: '';
+                height: 5vw;
+                width: 5vw;
+                background-image: url(../img/icon/arrowdownwhite1.svg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                left: 0;
+                right: 0;
+                top: 30.5%;
+                margin: 0 auto;
+                transform: rotate(45deg);
+            }
+            &:hover:after{
+                animation: aniArrow 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+            }
+            a {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

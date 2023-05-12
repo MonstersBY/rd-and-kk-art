@@ -45,4 +45,43 @@
 }
 
 @media (max-width: 48em) {
+    .footer {
+        margin-bottom: 26vw;
+        &__img {
+            width: 45.3vw;
+            height: 47.5vw;
+            margin: 0 auto;
+            margin-bottom: 11.7vw;
+    
+            img {
+                mix-blend-mode: darken;
+            }
+        }
+        &__title {
+            font-size: 8vw;
+            line-height: 125%;
+            margin-bottom: 2vw;
+        }
+        &__text {
+            font-size: 4vw;
+            line-height: 120%;
+            margin-bottom: 8vw;
+        }
+        &__links {
+            margin: 0 auto;
+            display: flex;
+            gap: 2.4vw;
+            justify-content: center;
+        }
+        &__link {
+            height: 8vw;
+    
+            &:nth-child(1) {
+                width: 42.13vw;
+            }
+            &:nth-child(2) {
+                width: 47.2vw;
+            }
+        }
+    }
 }
