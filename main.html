@@ -28,7 +28,7 @@
 </header>
 
 <div class="fixed-link">
-    <a href="" class="fixed-link__main">
+    <a href="#footer" class="fixed-link__main">
         <div class="fixed-link__main-text">Скачать приложение</div>
         <div class="fixed-link__main-icon"></div>
     </a>
@@ -63,8 +63,46 @@
                 <div class="about-app__text desktop">Приятный и удобный интерфейс приложения поможет смотреть эксклюзивные курсы, когда вам удобно и в нужном ритме</div>
                 <div class="about-app__text mobile">В Доброй школе вы найдёте себе новых друзей и единомышленников, всегда сможете получить совет и помощь. Наши ученики запускают свои свои бренды и становятся художниками.</div>
             </div>
-            <div class="about-app__video">
-                <img src="./img/book-video-img.jpg" alt="">
+            <div class="about-app__video" data-state="not-started">
+                <div class="about-app__video-double left mobile">
+                    <div class="about-app__video-double-back"></div>
+                    <div class="about-app__video-double-icon">
+                        <img src="./img/icon/fast.svg" alt="">
+                    </div>
+                    <span>10</span>
+                </div>
+                <div class="about-app__video-double right  mobile">
+                    <div class="about-app__video-double-back"></div>
+                    <span>10</span>
+                    <div class="about-app__video-double-icon">
+                        <img src="./img/icon/fast.svg" alt="">
+                    </div>
+                </div>
+                <video id="main-video" preload="metadata" poster="./img/book-video-img.jpg">
+                    <source src="./video/MxYJEx5Z.mp4"  type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                <div class="about-app__video-start">
+                    <div class="about-app__video-start-play">
+                        <img src="./img/icon/play.svg" alt="">
+                    </div>
+                </div>
+                <div class="about-app__video-stopped">
+                    <img src="./img/icon/big-pause.svg" alt="">
+                </div>
+                <div id="video-controls" class="about-app__video-controls" data-state="visible">
+                    <button id="playpause" type="button" data-state="play" class="desktop"></button>
+                    <span class="about-app__video-current"></span>
+                    <div class="about-app__video-progress">
+                        <div class="about-app__video-progress-filled">
+
+                        </div>
+                    </div>
+                    <span class="mobile">/</span>
+                    <span class="about-app__video-duration"></span>
+                    <button class="about-app__video-controls-mute desktop" id="mute" type="button" data-state="mute"></button>
+                    <input type="range" name="volume" class="about-app__video-controls-volume desktop" min="0" max="1" step="0.05" value="1">
+                </div>
             </div>
         </div>
     </section>
@@ -552,7 +590,7 @@
     </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__img">
             <img src="./img/footer-img.jpg" alt="">
@@ -572,12 +610,13 @@
 
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script src="js/swiper-bundle.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/jquery.fancybox.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="./js/jquery.maskedinput.js"></script>
 <script src="./js/inputmask.js"></script>
 <script src="./js/swiper.js"></script>
-<script src="js/main.js"></script>
+<script src="./js/noframework.waypoints.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

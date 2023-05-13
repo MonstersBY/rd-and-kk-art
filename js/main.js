@@ -87,6 +87,117 @@ const sliderReviewsMob = new Swiper(".reviews__swiper-mobile", {
   },
 })
 
+const videoPlayer = document.querySelector('.about-app__video')
+const video = videoPlayer.querySelector('#main-video')
+const playButton = videoPlayer.querySelector('#playpause')
+const mute = videoPlayer.querySelector('.about-app__video-controls-mute')
+const volume = videoPlayer.querySelector('.about-app__video-controls-volume')
+const currentTimeElement = videoPlayer.querySelector('.about-app__video-current')
+const durationTimeElement = videoPlayer.querySelector('.about-app__video-duration')
+const progress = videoPlayer.querySelector('.about-app__video-progress')
+const progressBar = videoPlayer.querySelector('.about-app__video-progress-filled')
+const fs = videoPlayer.querySelector('#fs')
+
+// videoPlayer.addEventListener('click', (e) => {
+//   if(window.screen.width <= 769) {
+//     if(videoPlayer.timerID){
+//       clearTimeout(videoPlayer.timerID);
+//       videoPlayer.timerID=null;
+//       if (e.target.closest('.right')) {
+//         e.target.closest('.right').classList.add('show')
+//         video.currentTime += 10
+//         setTimeout(() => {
+//           e.target.closest('.right').classList.remove('show')
+//         },500);
+//       }
+//       if (e.target.closest('.left')) {
+//         e.target.closest('.left').classList.add('show')
+//         video.currentTime -= 10
+//         setTimeout(() => {
+//           e.target.closest('.left').classList.remove('show')
+//         },500);
+//       }
+//      }
+//    else{
+//     videoPlayer.timerID=setTimeout(() => {
+//         playStop(e)
+//         videoPlayer.timerID=null;
+//       },300)
+//     }
+//   } else {
+//     playStop(e)
+//   }
+// })
+
+function playStop(e){
+  if(videoPlayer.getAttribute('data-state') != 'started') videoPlayer.setAttribute('data-state', 'started')
+  if(!e.target.closest('.about-app__video-controls'))
+  if(video.paused){
+    video.play()
+    playButton.setAttribute('data-state', 'pause')
+    videoPlayer.setAttribute('data-state', 'started')
+  } else {
+    video.pause()
+    playButton.setAttribute('data-state', 'play')
+    videoPlayer.setAttribute('data-state', 'stopped')
+  }
+}
+
+playButton.addEventListener('click', (e) => {
+  if(video.paused){
+    video.play()
+    playButton.setAttribute('data-state', 'pause')
+  } else {
+    video.pause()
+    playButton.setAttribute('data-state', 'play')
+  }
+})
+volume.addEventListener('mousemove', (e)=> {
+  console.log(e.target.value)
+  video.volume = e.target.value
+  e.target.value == 0 ? mute.setAttribute('data-state', 'on-mute') : mute.setAttribute('data-state', 'mute')
+})
+mute.addEventListener('click', (e)=> {
+  if(mute.getAttribute('data-state') == 'mute') {
+    video.volume = 0
+    volume.value = 0
+    mute.setAttribute('data-state', 'on-mute')
+  } else {
+    video.volume = 1
+    volume.value = 1
+    mute.setAttribute('data-state', 'mute')
+  }
+})
+
+const currentTime = () => {
+  let currentMinutes = Math.floor(video.currentTime / 60)
+  let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
+  let durationMinutes = Math.floor(video.duration / 60)
+  let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
+
+  currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
+  durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds}`
+}
+
+video.addEventListener('timeupdate', currentTime)
+
+video.addEventListener('timeupdate', () =>{
+  const percentage = (video.currentTime / video.duration) * 100
+  progressBar.style.width = `${percentage}%`
+})
+
+progress.addEventListener('click', (e) =>{
+  const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
+  video.currentTime = progressTime
+})
+
+var waypoint = new Waypoint({
+  element: document.querySelector('.baner__info'),
+  handler: function(direction) {
+    document.querySelector('.fixed-link').classList.toggle('show')
+  }
+})
+
 const questionBox = document.querySelectorAll('.questions__item')
 
 questionBox.forEach((btn) => {
