@@ -23,6 +23,17 @@
         width: 100%;
         height: 78.9rem;
 
+        &[data-state="started"]:hover {
+            .about-app__video-controls[data-state="visible"] {
+                display: flex;
+            }
+        }
+        &[data-state="stopped"] {
+            .about-app__video-controls[data-state="visible"] {
+                display: flex;
+            }
+        }
+
         &[data-state="stopped"] {
             .about-app__video-stopped {
                 position: absolute;
@@ -96,7 +107,7 @@
             right: 0;
             margin: 0 auto;
             padding: 0 8rem;
-            display: flex;
+            display: none;
             justify-content: space-between;
             align-items: center;
 
@@ -114,12 +125,12 @@
                 background-repeat: no-repeat;
 
                 &[data-state="play"] {
-                    background-image: url("../img/icon/stop.svg");
+                    background-image: url("../img/icon/play-mini.svg");
                     width: 4.6rem;
                     height: 4.6rem;
                 }
                 &[data-state="pause"] {
-                    background-image: url("../img/icon/play-mini.svg");
+                    background-image: url("../img/icon/stop.svg");
                     width: 4.6rem;
                     height: 4.6rem;
                 }
@@ -178,9 +189,9 @@
             display: none;
         }
           
-        &-controls[data-state="visible"] {
-            display: flex;
-        }
+        // &-controls[data-state="visible"] {
+        //     display: flex;
+        // }
         input[type='range'] {
             overflow: hidden;
             width: 12.5rem;
@@ -357,22 +368,18 @@
                     background-repeat: no-repeat;
     
                     &[data-state="play"] {
-                        background-image: url("../img/icon/stop.svg");
                         width: 4.6rem;
                         height: 4.6rem;
                     }
                     &[data-state="pause"] {
-                        background-image: url("../img/icon/play-mini.svg");
                         width: 4.6rem;
                         height: 4.6rem;
                     }
                     &[data-state="mute"]{
-                        background-image: url("../img/icon/volume.svg");
                         width: 3.2rem;
                         height: 3.2rem;
                     }
                     &[data-state="on-mute"]{
-                        background-image: url("../img/icon/volume.svg");
                         width: 3.2rem;
                         height: 3.2rem;
                     }

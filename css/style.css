@@ -485,6 +485,16 @@ section {
   width: 100%;
   height: 78.9rem;
 }
+.about-app__video[data-state=started]:hover .about-app__video-controls[data-state=visible] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-app__video[data-state=stopped] .about-app__video-controls[data-state=visible] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .about-app__video[data-state=stopped] .about-app__video-stopped {
   position: absolute;
   display: block;
@@ -555,9 +565,7 @@ section {
   right: 0;
   margin: 0 auto;
   padding: 0 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -577,12 +585,12 @@ section {
   background-repeat: no-repeat;
 }
 .about-app__video-controls button[data-state=play] {
-  background-image: url("../img/icon/stop.svg");
+  background-image: url("../img/icon/play-mini.svg");
   width: 4.6rem;
   height: 4.6rem;
 }
 .about-app__video-controls button[data-state=pause] {
-  background-image: url("../img/icon/play-mini.svg");
+  background-image: url("../img/icon/stop.svg");
   width: 4.6rem;
   height: 4.6rem;
 }
@@ -635,11 +643,6 @@ section {
 }
 .about-app__video-controls[data-state=hidden] {
   display: none;
-}
-.about-app__video-controls[data-state=visible] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .about-app__video input[type=range] {
   overflow: hidden;
@@ -823,22 +826,18 @@ section {
     background-repeat: no-repeat;
   }
   .about-app__video-controls button[data-state=play] {
-    background-image: url("../img/icon/stop.svg");
     width: 4.6rem;
     height: 4.6rem;
   }
   .about-app__video-controls button[data-state=pause] {
-    background-image: url("../img/icon/play-mini.svg");
     width: 4.6rem;
     height: 4.6rem;
   }
   .about-app__video-controls button[data-state=mute] {
-    background-image: url("../img/icon/volume.svg");
     width: 3.2rem;
     height: 3.2rem;
   }
   .about-app__video-controls button[data-state=on-mute] {
-    background-image: url("../img/icon/volume.svg");
     width: 3.2rem;
     height: 3.2rem;
   }
