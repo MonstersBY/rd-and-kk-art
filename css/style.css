@@ -310,7 +310,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 122.9rem;
+  width: 130rem;
   left: 0;
   right: 0;
   top: 35.5%;
@@ -1312,7 +1312,7 @@ section {
 }
 .frames__second-animation .frames__info-title {
   font-size: 3.4rem;
-  width: 35rem;
+  width: 41rem;
 }
 .frames__second-animation-anim {
   width: 26.5rem;
@@ -1356,7 +1356,7 @@ section {
 }
 .frames__big-info {
   position: absolute;
-  width: 71.7rem;
+  width: 76.7rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1668,7 +1668,7 @@ section {
 .questions__item.active .questions__item-text {
   display: block;
   padding-bottom: 2rem;
-  height: 6.6rem;
+  height: 12.6rem;
 }
 .questions__item.active .questions__item-icon {
   background-color: #1F212C;
