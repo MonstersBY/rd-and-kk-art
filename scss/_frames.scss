@@ -10,6 +10,7 @@
             border-radius: 3.2rem;
             background-color: #FEFCF8;
             position: relative;
+            width: 100%;
 
             &:nth-child(1) {
                 grid-row: 1/4;
@@ -72,6 +73,8 @@
             align-items: center;
             padding-left: 5.3rem;
             padding-right: 4.5rem;
+            display: flex;
+            margin-left: auto;
 
             &-text {
                 font-weight: 500;
@@ -86,6 +89,13 @@
                 .frames__first-animation-anim {
                     width: 18.8rem;
                 }
+                video {
+                    width: 18.8rem;
+                }
+            }
+            video {
+                width: 14.7rem;
+                mix-blend-mode: darken;
             }
 
         }
@@ -153,6 +163,10 @@
             }
             &-anim {
                 width: 26.5rem;
+            }
+            video {
+                width: 26.5rem;
+                mix-blend-mode: darken;
             }
         }
     }
@@ -331,6 +345,12 @@
                     .frames__first-animation-anim {
                         width: 32vw;
                     }
+                    video {
+                        width: 32vw;
+                    }
+                }
+                video {
+                    width: 23.2vw;
                 }
             }
         }
@@ -372,6 +392,9 @@
                     width: 70vw;
                 }
                 &-img {
+                    width: 45.6vw;
+                }
+                video {
                     width: 45.6vw;
                 }
             }

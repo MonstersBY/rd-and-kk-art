@@ -206,6 +206,11 @@ section {
 .footer__img img {
   mix-blend-mode: darken;
 }
+.footer__img video {
+  width: 35rem;
+  height: 36.6rem;
+  mix-blend-mode: darken;
+}
 .footer__title {
   font-family: "Austin Cyr";
   font-weight: 700;
@@ -254,6 +259,10 @@ section {
   }
   .footer__img img {
     mix-blend-mode: darken;
+  }
+  .footer__img video {
+    width: 45.3vw;
+    height: 47.5vw;
   }
   .footer__title {
     font-size: 8vw;
@@ -1136,6 +1145,7 @@ section {
   border-radius: 3.2rem;
   background-color: #FEFCF8;
   position: relative;
+  width: 100%;
 }
 .frames__first-item:nth-child(1) {
   -ms-grid-row: 1;
@@ -1208,6 +1218,8 @@ section {
           align-items: center;
   padding-left: 5.3rem;
   padding-right: 4.5rem;
+  display: flex;
+  margin-left: auto;
 }
 .frames__first-animation-text {
   font-weight: 500;
@@ -1220,6 +1232,13 @@ section {
 }
 .frames__first-animation:last-child .frames__first-animation-anim {
   width: 18.8rem;
+}
+.frames__first-animation:last-child video {
+  width: 18.8rem;
+}
+.frames__first-animation video {
+  width: 14.7rem;
+  mix-blend-mode: darken;
 }
 .frames__second {
   display: -ms-grid;
@@ -1316,6 +1335,10 @@ section {
 }
 .frames__second-animation-anim {
   width: 26.5rem;
+}
+.frames__second-animation video {
+  width: 26.5rem;
+  mix-blend-mode: darken;
 }
 .frames__info-link {
   margin: 0 auto;
@@ -1493,6 +1516,12 @@ section {
   .frames__first-animation:last-child .frames__first-animation-anim {
     width: 32vw;
   }
+  .frames__first-animation:last-child video {
+    width: 32vw;
+  }
+  .frames__first-animation video {
+    width: 23.2vw;
+  }
   .frames__second {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1540,6 +1569,9 @@ section {
     width: 70vw;
   }
   .frames__second-animation-img {
+    width: 45.6vw;
+  }
+  .frames__second-animation video {
     width: 45.6vw;
   }
   .frames__info-link {
@@ -1637,6 +1669,11 @@ section {
 }
 .questions__img img {
   mix-blend-mode: darken;
+}
+.questions__img video {
+  width: 57.5rem;
+  mix-blend-mode: darken;
+  margin-top: -7rem;
 }
 .questions__modul {
   width: 91.5rem;
@@ -1754,6 +1791,11 @@ section {
   }
   .questions__img img {
     mix-blend-mode: darken;
+  }
+  .questions__img video {
+    width: 61vw;
+    mix-blend-mode: darken;
+    margin-top: -8vw;
   }
   .questions__modul {
     width: auto;

@@ -9,6 +9,11 @@
         img {
             mix-blend-mode: darken;
         }
+        video {
+            width: 35rem;
+            height: 36.6rem;
+            mix-blend-mode: darken;
+        }
     }
     &__title {
         font-family: 'Austin Cyr';
@@ -55,6 +60,10 @@
     
             img {
                 mix-blend-mode: darken;
+            }
+            video {
+                width: 45.3vw;
+                height: 47.5vw;
             }
         }
         &__title {
