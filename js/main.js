@@ -98,40 +98,40 @@ const progress = videoPlayer.querySelector('.about-app__video-progress')
 const progressBar = videoPlayer.querySelector('.about-app__video-progress-filled')
 const fs = videoPlayer.querySelector('#fs')
 
-// videoPlayer.addEventListener('click', (e) => {
-//   if(window.screen.width <= 769) {
-//     if(videoPlayer.timerID){
-//       clearTimeout(videoPlayer.timerID);
-//       videoPlayer.timerID=null;
-//       if (e.target.closest('.right')) {
-//         e.target.closest('.right').classList.add('show')
-//         video.currentTime += 10
-//         setTimeout(() => {
-//           e.target.closest('.right').classList.remove('show')
-//         },500);
-//       }
-//       if (e.target.closest('.left')) {
-//         e.target.closest('.left').classList.add('show')
-//         video.currentTime -= 10
-//         setTimeout(() => {
-//           e.target.closest('.left').classList.remove('show')
-//         },500);
-//       }
-//      }
-//    else{
-//     videoPlayer.timerID=setTimeout(() => {
-//         playStop(e)
-//         videoPlayer.timerID=null;
-//       },300)
-//     }
-//   } else {
-//     playStop(e)
-//   }
-// })
+videoPlayer.addEventListener('click', (e) => {
+  if(window.screen.width <= 769) {
+    if(videoPlayer.timerID){
+      clearTimeout(videoPlayer.timerID);
+      videoPlayer.timerID=null;
+      if (e.target.closest('.right')) {
+        e.target.closest('.right').classList.add('show')
+        video.currentTime += 10
+        setTimeout(() => {
+          e.target.closest('.right').classList.remove('show')
+        },500);
+      }
+      if (e.target.closest('.left')) {
+        e.target.closest('.left').classList.add('show')
+        video.currentTime -= 10
+        setTimeout(() => {
+          e.target.closest('.left').classList.remove('show')
+        },500);
+      }
+     }
+   else{
+    videoPlayer.timerID=setTimeout(() => {
+        playStop(e)
+        videoPlayer.timerID=null;
+      },300)
+    }
+  } else {
+    playStop(e)
+  }
+})
 
 function playStop(e){
   if(videoPlayer.getAttribute('data-state') != 'started') videoPlayer.setAttribute('data-state', 'started')
-  if(!e.target.closest('.about-app__video-controls'))
+  if(!e.target.closest('.about-app__video-controls') || e.target.closest('#playpause'))
   if(video.paused){
     video.play()
     playButton.setAttribute('data-state', 'pause')
@@ -143,17 +143,7 @@ function playStop(e){
   }
 }
 
-playButton.addEventListener('click', (e) => {
-  if(video.paused){
-    video.play()
-    playButton.setAttribute('data-state', 'pause')
-  } else {
-    video.pause()
-    playButton.setAttribute('data-state', 'play')
-  }
-})
 volume.addEventListener('mousemove', (e)=> {
-  console.log(e.target.value)
   video.volume = e.target.value
   e.target.value == 0 ? mute.setAttribute('data-state', 'on-mute') : mute.setAttribute('data-state', 'mute')
 })
