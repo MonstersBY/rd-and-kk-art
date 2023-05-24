@@ -130,7 +130,7 @@ videoPlayer.addEventListener('click', (e) => {
 })
 
 function playStop(e){
-  if(videoPlayer.getAttribute('data-state') != 'started') videoPlayer.setAttribute('data-state', 'started')
+  if(videoPlayer.getAttribute('data-state') == 'not-started') videoPlayer.setAttribute('data-state', 'started')
   if(!e.target.closest('.about-app__video-controls') || e.target.closest('#playpause'))
   if(video.paused){
     video.play()
