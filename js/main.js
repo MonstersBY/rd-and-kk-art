@@ -184,6 +184,13 @@ progress.addEventListener('click', (e) =>{
 var waypoint = new Waypoint({
   element: document.querySelector('.baner__info'),
   handler: function(direction) {
+    document.querySelector('.header__link').classList.toggle('active')
+    document.querySelector('.fixed-link').classList.toggle('show')
+  }
+})
+var waypoint1 = new Waypoint({
+  element: document.querySelector('.about-us'),
+  handler: function(direction) {
     document.querySelector('.fixed-link').classList.toggle('show')
   }
 })
@@ -226,3 +233,17 @@ popUpBox.addEventListener('click', (btn) => {
   const targetPop = btn.target.closest('.popup__container')
   if(!targetPop) popUpBox.classList.remove('active')
 })
+
+$('.header__right a').on('click', function() {
+
+  let href = $(this).attr('href');
+
+  $('html, body').animate({
+      scrollTop: $(href).offset().top
+  }, {
+      duration: 370,
+      easing: "linear"
+  });
+
+  return false;
+});

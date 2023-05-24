@@ -44,7 +44,7 @@
                 &-text {
                     display: block;
                     padding-bottom: 2rem;
-                    height: 12.6rem;
+                    max-height: 200rem;
                 }
 
                 &-icon {
@@ -98,7 +98,7 @@
             margin-left: 3.2rem;
             transition: all 0.5s;
             padding-bottom: 0;
-            height: 0;
+            max-height: 0;
             overflow: hidden;
             transition: all .5s;
         }
@@ -144,8 +144,8 @@
             width: 100%;
             position: relative;
             background: #FEFCF8;
-            border-radius: 8.5vw;
-            padding: 3.2vw;
+            border-radius: 6.67vw;
+            padding: 3.2vw  3.2vw 3.2vw 4.27vw ;
             cursor: pointer;
     
             &.active {
@@ -154,7 +154,7 @@
                         display: block;
                         padding-top: 4.8vw;
                         padding-bottom: 0;
-                        height: 17vw;
+                        max-height: 200vw;
                     }
     
                     &-icon {
@@ -167,7 +167,7 @@
             }
             
             &-head {
-                margin: 0 0.8vw 0;
+                margin: 0;
                 height: auto;
             }
             &-title {
@@ -183,7 +183,8 @@
                 &::after {
                     height: 8.1vw;
                     width:  2.7vw;
-                    top: 0;
+                    top: -0.4vw;
+                    left: 0.3vw;
                 }
             }
             &-text {
@@ -191,11 +192,10 @@
                 font-weight: 500;
                 font-size: 3.2vw;
                 line-height: 125%;
-                margin-left: 4.3vw;
-                margin-right: 4.3vw;
                 transition: all 0.5s;
                 padding-bottom: 0;
-                height: 0;
+                margin: 0;
+                max-height: 0;
                 overflow: hidden;
                 transition: all .5s;
             }

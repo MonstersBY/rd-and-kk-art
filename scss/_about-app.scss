@@ -270,7 +270,7 @@
             height: 64.3vw;
     
             img {
-                border-radius: 8.5vw;
+                border-radius: 8vw;
                 height: 100%;
                 object-fit: cover;
             }
@@ -332,7 +332,7 @@
             video {
                 width: 100%;
                 height: 100%;
-                border-radius: 8.5vw;
+                border-radius: 6.134vw;
                 object-fit: cover;
             }
             &-start {
@@ -345,8 +345,8 @@
                 background: rgba(45, 45, 45, 0.65);
                 backdrop-filter: blur(4.90647px);
                 border-radius: unset;
-                border-bottom-left-radius: 8.5vw;
-                border-bottom-right-radius: 8.5vw;
+                border-bottom-left-radius: 6.134vw;
+                border-bottom-right-radius: 6.134vw;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -392,12 +392,12 @@
                 position: absolute;
                 cursor: pointer;
                 width: auto;
-                height: 1vw;
+                height: 0.54vw;
                 border-radius: 23.5511px;
                 left: 0;
                 right: 0;
                 margin: 0 3.2vw;
-                bottom: 12vw;
+                bottom: 12.3vw;
     
                 &-filled {
                     border-radius: 23.5511px;
@@ -412,7 +412,7 @@
                         position: absolute;
                         border-radius: 50%;
                         right: -1vw;
-                        bottom: -0.1vw;
+                        bottom: -0.5vw;
                     }
                 }
             }
