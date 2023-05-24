@@ -1980,8 +1980,8 @@ section {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 9rem;
-  height: 1.2rem;
-  top: 4.6rem;
+  height: 3.2rem;
+  top: 2.6rem;
 }
 .student-work__btn-next::after, .student-work__btn-prev::after {
   content: unset;
