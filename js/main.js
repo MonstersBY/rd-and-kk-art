@@ -234,7 +234,7 @@ popUpBox.addEventListener('click', (btn) => {
   if(!targetPop) popUpBox.classList.remove('active')
 })
 
-$('.header__right a').on('click', function() {
+$('.header__right a, .frames__main-link, .fixed-link__main').on('click', function() {
 
   let href = $(this).attr('href');
 
