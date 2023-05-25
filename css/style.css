@@ -1244,7 +1244,7 @@ section {
 .frames__first-animation-anim {
   width: 16.7rem;
   overflow: hidden;
-  height: 22rem;
+  height: 21rem;
 }
 .frames__first-animation:last-child .frames__first-animation-anim {
   width: 18rem;
@@ -1532,8 +1532,8 @@ section {
     width: 41vw;
   }
   .frames__first-animation-anim {
-    width: 23.2vw;
-    height: 29vw;
+    width: 26.2vw;
+    height: 33vw;
   }
   .frames__first-animation:last-child .frames__first-animation-anim {
     width: 30.5vw;
@@ -1544,7 +1544,7 @@ section {
     left: -0.7vw;
   }
   .frames__first-animation video {
-    width: 23.2vw;
+    width: 26.2vw;
   }
   .frames__second {
     display: -webkit-box;
