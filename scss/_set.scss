@@ -24,6 +24,10 @@ body {
     padding: 0;
     color: #1F212C; // цвет по умолчанию текста по сайту
     background-color: #F1E6D7;
+
+    &.modal {
+        overflow: hidden;
+    }
 }
 
 input,

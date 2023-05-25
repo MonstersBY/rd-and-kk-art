@@ -28,6 +28,9 @@ body {
   color: #1F212C;
   background-color: #F1E6D7;
 }
+body.modal {
+  overflow: hidden;
+}
 
 input,
 textarea {
@@ -2693,7 +2696,7 @@ section {
 }
 .fixed-link {
   position: fixed;
-  z-index: 11;
+  z-index: 12;
   right: 16rem;
   bottom: 2rem;
   opacity: 0;
@@ -2757,7 +2760,6 @@ section {
 @media (max-width: 48em) {
   .fixed-link {
     position: fixed;
-    z-index: 10;
     right: 4vw;
     top: unset;
     bottom: 5vw;

@@ -227,11 +227,16 @@ document.querySelector(".student-work__swiper").addEventListener('click', (btn) 
   popUpContainer.querySelector('.student-work__link').innerHTML = 'Закрыть'
   popUpContainer.querySelector('.student-work__link').addEventListener('click', (btn) => {
     popUpBox.classList.remove('active')
+    document.querySelector("body").classList.toggle('modal')
   })
+  document.querySelector("body").classList.toggle('modal')
 })
 popUpBox.addEventListener('click', (btn) => {
   const targetPop = btn.target.closest('.popup__container')
-  if(!targetPop) popUpBox.classList.remove('active')
+  if(!targetPop) {
+    document.querySelector("body").classList.toggle('modal')
+    popUpBox.classList.remove('active')
+  }
 })
 
 $('.header__right a, .frames__main-link, .fixed-link__main').on('click', function() {
