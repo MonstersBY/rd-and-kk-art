@@ -84,18 +84,26 @@
             }
             &-anim {
                 width: 14.7rem;
+                overflow: hidden;
+                height: 18.5rem;
             }
             &:last-child {
                 .frames__first-animation-anim {
-                    width: 18.8rem;
+                    // width: 18.8rem;
+                    width: 18rem;
+                    position: relative;
+                    height: 22rem;
                 }
                 video {
                     width: 18.8rem;
+                    position: absolute;
+                    top: 0;
+                    left: -0.5rem;
                 }
             }
             video {
                 width: 14.7rem;
-                mix-blend-mode: darken;
+                // mix-blend-mode: darken;
             }
 
         }
@@ -163,10 +171,11 @@
             }
             &-anim {
                 width: 26.5rem;
+                overflow: hidden;
             }
             video {
                 width: 26.5rem;
-                mix-blend-mode: darken;
+                // mix-blend-mode: darken;
             }
         }
     }
@@ -331,6 +340,7 @@
                 align-items: center;
                 padding-left: 4.2vw;
                 padding-right: 4.2vw;
+                height: 40.6vw;
     
                 &-text {
                     font-weight: 500;
@@ -340,13 +350,17 @@
                 }
                 &-anim {
                     width: 23.2vw;
+                    height: 29vw;
                 }
                 &:last-child {
                     .frames__first-animation-anim {
-                        width: 32vw;
+                        // width: 32vw;
+                        width: 30.5vw;
+                        height: 37.4vw;
                     }
                     video {
                         width: 32vw;
+                        left: -0.7vw;
                     }
                 }
                 video {
@@ -393,6 +407,10 @@
                 }
                 &-img {
                     width: 45.6vw;
+                }
+                &-anim {
+                    width: 45.6vw;
+                    height: 63.6vw;
                 }
                 video {
                     width: 45.6vw;

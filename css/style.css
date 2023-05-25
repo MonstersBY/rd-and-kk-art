@@ -205,10 +205,12 @@ section {
   margin-bottom: 17rem;
 }
 .footer__img {
-  width: 35rem;
-  height: 36.6rem;
   margin: 0 auto;
   margin-bottom: 6.6rem;
+  position: relative;
+  width: 33.5rem;
+  height: 36.6rem;
+  overflow: hidden;
 }
 .footer__img img {
   mix-blend-mode: darken;
@@ -216,7 +218,9 @@ section {
 .footer__img video {
   width: 35rem;
   height: 36.6rem;
-  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
 }
 .footer__title {
   font-family: "Austin Cyr";
@@ -259,10 +263,10 @@ section {
     margin-bottom: 26vw;
   }
   .footer__img {
-    width: 45.3vw;
     height: 47.5vw;
     margin: 0 auto;
     margin-bottom: 11.7vw;
+    width: 43.3vw;
   }
   .footer__img img {
     mix-blend-mode: darken;
@@ -270,6 +274,7 @@ section {
   .footer__img video {
     width: 45.3vw;
     height: 47.5vw;
+    left: -0.5vw;
   }
   .footer__title {
     font-size: 8vw;
@@ -1236,16 +1241,22 @@ section {
 }
 .frames__first-animation-anim {
   width: 14.7rem;
+  overflow: hidden;
+  height: 18.5rem;
 }
 .frames__first-animation:last-child .frames__first-animation-anim {
-  width: 18.8rem;
+  width: 18rem;
+  position: relative;
+  height: 22rem;
 }
 .frames__first-animation:last-child video {
   width: 18.8rem;
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
 }
 .frames__first-animation video {
   width: 14.7rem;
-  mix-blend-mode: darken;
 }
 .frames__second {
   display: -ms-grid;
@@ -1342,10 +1353,10 @@ section {
 }
 .frames__second-animation-anim {
   width: 26.5rem;
+  overflow: hidden;
 }
 .frames__second-animation video {
   width: 26.5rem;
-  mix-blend-mode: darken;
 }
 .frames__info-link {
   margin: 0 auto;
@@ -1510,6 +1521,7 @@ section {
             align-items: center;
     padding-left: 4.2vw;
     padding-right: 4.2vw;
+    height: 40.6vw;
   }
   .frames__first-animation-text {
     font-weight: 500;
@@ -1519,12 +1531,15 @@ section {
   }
   .frames__first-animation-anim {
     width: 23.2vw;
+    height: 29vw;
   }
   .frames__first-animation:last-child .frames__first-animation-anim {
-    width: 32vw;
+    width: 30.5vw;
+    height: 37.4vw;
   }
   .frames__first-animation:last-child video {
     width: 32vw;
+    left: -0.7vw;
   }
   .frames__first-animation video {
     width: 23.2vw;
@@ -1577,6 +1592,10 @@ section {
   }
   .frames__second-animation-img {
     width: 45.6vw;
+  }
+  .frames__second-animation-anim {
+    width: 45.6vw;
+    height: 63.6vw;
   }
   .frames__second-animation video {
     width: 45.6vw;
@@ -1672,15 +1691,15 @@ section {
 }
 .questions__img {
   width: 57.5rem;
-  height: 64.4rem;
+  height: 65rem;
+  overflow: hidden;
+  margin-top: -7rem;
 }
 .questions__img img {
   mix-blend-mode: darken;
 }
 .questions__img video {
   width: 57.5rem;
-  mix-blend-mode: darken;
-  margin-top: -7rem;
 }
 .questions__modul {
   width: 91.5rem;
@@ -1796,13 +1815,8 @@ section {
     height: 68.3vw;
     margin: 0 auto;
   }
-  .questions__img img {
-    mix-blend-mode: darken;
-  }
   .questions__img video {
     width: 61vw;
-    mix-blend-mode: darken;
-    margin-top: -8vw;
   }
   .questions__modul {
     width: auto;

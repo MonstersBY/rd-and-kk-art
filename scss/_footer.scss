@@ -1,10 +1,14 @@
 .footer {
     margin-bottom: 17rem;
     &__img {
-        width: 35rem;
-        height: 36.6rem;
+        // width: 35rem;
+        // height: 36.6rem;
         margin: 0 auto;
         margin-bottom: 6.6rem;
+        position: relative;
+        width: 33.5rem;
+        height: 36.6rem;
+        overflow: hidden;
 
         img {
             mix-blend-mode: darken;
@@ -12,7 +16,10 @@
         video {
             width: 35rem;
             height: 36.6rem;
-            mix-blend-mode: darken;
+            position: absolute;
+            top: 0;
+            left: -0.5rem;
+            // mix-blend-mode: darken;
         }
     }
     &__title {
@@ -53,10 +60,11 @@
     .footer {
         margin-bottom: 26vw;
         &__img {
-            width: 45.3vw;
+            // width: 45.3vw;
             height: 47.5vw;
             margin: 0 auto;
             margin-bottom: 11.7vw;
+            width: 43.3vw;
     
             img {
                 mix-blend-mode: darken;
@@ -64,6 +72,7 @@
             video {
                 width: 45.3vw;
                 height: 47.5vw;
+                left: -0.5vw;
             }
         }
         &__title {

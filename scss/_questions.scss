@@ -6,15 +6,17 @@
     }
     &__img {
         width: 57.5rem;
-        height: 64.4rem;
+        // height: 64.4rem;
+        height: 65rem;
+        overflow: hidden;
+        margin-top: -7rem;
 
         img {
             mix-blend-mode: darken;
         }
         video {
             width: 57.5rem;
-            mix-blend-mode: darken;
-            margin-top: -7rem;
+            // mix-blend-mode: darken;
         }
     }
     &__modul {
@@ -118,13 +120,8 @@
             height: 68.3vw;
             margin: 0 auto;
     
-            img {
-                mix-blend-mode: darken;
-            }
             video {
                 width: 61vw;
-                mix-blend-mode: darken;
-                margin-top: -8vw;
             }
         }
         &__modul {
