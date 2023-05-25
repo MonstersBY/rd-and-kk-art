@@ -182,7 +182,7 @@ progress.addEventListener('click', (e) =>{
 })
 
 var waypoint = new Waypoint({
-  element: document.querySelector('.baner__info'),
+  element: document.querySelector('.about-app'),
   handler: function(direction) {
     document.querySelector('.header__link').classList.toggle('active')
     document.querySelector('.fixed-link').classList.toggle('show')

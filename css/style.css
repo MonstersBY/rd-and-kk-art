@@ -308,6 +308,7 @@ section {
 }
 .baner {
   margin-bottom: 20rem;
+  height: 100.8rem;
 }
 .baner .container {
   width: 100%;
@@ -410,6 +411,7 @@ section {
 @media (max-width: 48em) {
   .baner {
     margin-bottom: 20rem;
+    height: 216vw;
   }
   .baner .container {
     padding: 0;
@@ -1240,9 +1242,9 @@ section {
   width: 33.2rem;
 }
 .frames__first-animation-anim {
-  width: 14.7rem;
+  width: 16.7rem;
   overflow: hidden;
-  height: 18.5rem;
+  height: 22rem;
 }
 .frames__first-animation:last-child .frames__first-animation-anim {
   width: 18rem;
@@ -1256,7 +1258,7 @@ section {
   left: -0.5rem;
 }
 .frames__first-animation video {
-  width: 14.7rem;
+  width: 16.7rem;
 }
 .frames__second {
   display: -ms-grid;
@@ -2548,8 +2550,6 @@ section {
           justify-content: center;
   background-color: #A56429;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 40px 60px rgba(221, 20, 68, 0.21);
-          box-shadow: 0px 40px 60px rgba(221, 20, 68, 0.21);
 }
 .about-us__cir-wr.win img {
   width: 4.9rem;
