@@ -184,6 +184,7 @@ progress.addEventListener('click', (e) =>{
 fs.addEventListener('click', (e) =>{
   if(fs.getAttribute('data-state') == 'go-fullscreen') {
     fullScreen(videoPlayer)
+    screen.orientation.lock('landscape').then(res=>console.log(res)).catch(err=>console.log(err))
   } else {
     closeFullscreen(videoPlayer)
   }
