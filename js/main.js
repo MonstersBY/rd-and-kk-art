@@ -147,6 +147,10 @@ volume.addEventListener('mousemove', (e)=> {
   video.volume = e.target.value
   e.target.value == 0 ? mute.setAttribute('data-state', 'on-mute') : mute.setAttribute('data-state', 'mute')
 })
+volume.addEventListener('touchmove', (e)=> {
+  video.volume = e.target.value
+  e.target.value == 0 ? mute.setAttribute('data-state', 'on-mute') : mute.setAttribute('data-state', 'mute')
+})
 mute.addEventListener('click', (e)=> {
   if(mute.getAttribute('data-state') == 'mute') {
     video.volume = 0
