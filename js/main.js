@@ -96,7 +96,7 @@ const currentTimeElement = videoPlayer.querySelector('.about-app__video-current'
 const durationTimeElement = videoPlayer.querySelector('.about-app__video-duration')
 const progress = videoPlayer.querySelector('.about-app__video-progress')
 const progressBar = videoPlayer.querySelector('.about-app__video-progress-filled')
-const fs = videoPlayer.querySelector('#fs')
+const fs = videoPlayer.querySelector('#full-screen')
 
 videoPlayer.addEventListener('click', (e) => {
   if(window.screen.width <= 769) {
@@ -180,6 +180,40 @@ progress.addEventListener('click', (e) =>{
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
   video.currentTime = progressTime
 })
+
+fs.addEventListener('click', (e) =>{
+  if(fs.getAttribute('data-state') == 'go-fullscreen') {
+    fullScreen(videoPlayer)
+    screen.orientation.lock('landscape').then(res=>console.log(res)).catch(err=>console.log(err))
+  } else {
+    closeFullscreen(videoPlayer)
+  }
+})
+
+function fullScreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+    fs.setAttribute('data-state', 'remove-fullscreen')
+  } else if(element.webkitrequestFullscreen) {
+    element.webkitRequestFullscreen();
+    fs.setAttribute('data-state', 'remove-fullscreen')
+  } else if(element.mozRequestFullscreen) {
+    element.mozRequestFullScreen();
+    fs.setAttribute('data-state', 'remove-fullscreen')
+  }
+}
+function closeFullscreen(element) {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+    fs.setAttribute('data-state', 'go-fullscreen')
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+    fs.setAttribute('data-state', 'go-fullscreen')
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+    fs.setAttribute('data-state', 'go-fullscreen')
+  }
+}
 
 var waypoint = new Waypoint({
   element: document.querySelector('.about-app'),

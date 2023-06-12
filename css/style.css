@@ -636,7 +636,7 @@ section {
   height: 2.25rem;
 }
 .about-app__video-controls button[data-state=remove-fullscreen] {
-  background-image: url("../img/icon/fullscreen.svg");
+  background-image: url("../img/icon/fullscreen-remove.svg");
   width: 2.25rem;
   height: 2.25rem;
 }
@@ -843,6 +843,7 @@ section {
             align-items: center;
     font-size: 3.2vw;
     line-height: 120%;
+    z-index: 2;
   }
   .about-app__video-controls button {
     border: none;
@@ -860,26 +861,35 @@ section {
     height: 4.6rem;
   }
   .about-app__video-controls button[data-state=mute] {
+    margin-left: auto;
     width: 3.2rem;
     height: 3.2rem;
   }
   .about-app__video-controls button[data-state=on-mute] {
+    margin-left: auto;
     width: 3.2rem;
     height: 3.2rem;
   }
-  .about-app__video-controls button:last-child {
-    margin-left: auto;
+  .about-app__video-controls button[data-state=go-fullscreen] {
+    margin-left: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .about-app__video-controls button[data-state=remove-fullscreen] {
+    margin-left: 4rem;
+    width: 4rem;
+    height: 4rem;
   }
   .about-app__video-progress {
     position: absolute;
     cursor: pointer;
     width: auto;
-    height: 0.54vw;
+    height: 1.54vw;
     border-radius: 23.5511px;
     left: 0;
     right: 0;
     margin: 0 3.2vw;
-    bottom: 12.3vw;
+    bottom: 11.3vw;
   }
   .about-app__video-progress-filled {
     border-radius: 23.5511px;
@@ -888,8 +898,8 @@ section {
   }
   .about-app__video-progress-filled::before {
     content: "";
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 2.6vw;
+    height: 2.6vw;
     background: #FEFCF8;
     position: absolute;
     border-radius: 50%;
@@ -912,13 +922,14 @@ section {
     display: flex;
   }
   .about-app__video input[type=range] {
+    margin-left: 1rem;
     overflow: hidden;
     width: 12.5rem;
     -webkit-appearance: none;
     border-radius: 1.1rem;
   }
   .about-app__video input[type=range]::-webkit-slider-runnable-track {
-    height: 0.6rem;
+    height: 1rem;
     -webkit-appearance: none;
     background: rgba(255, 255, 255, 0.2);
     margin-top: -1px;
@@ -927,7 +938,7 @@ section {
   .about-app__video input[type=range]::-webkit-slider-thumb {
     width: 0;
     -webkit-appearance: none;
-    height: 0.6rem;
+    height: 1rem;
     background: #FEFCF8;
     -webkit-box-shadow: -80px 0 0 80px #FEFCF8;
             box-shadow: -80px 0 0 80px #FEFCF8;
@@ -938,7 +949,7 @@ section {
     border-radius: 1.1rem;
   }
   .about-app__video input[type=range]::-moz-range-track {
-    height: 0.6rem;
+    height: 1rem;
     -webkit-appearance: none;
     background: rgba(255, 255, 255, 0.2);
     margin-top: -1px;
@@ -1680,7 +1691,8 @@ section {
   .frames__main-link-icon::after {
     height: 8.1vw;
     width: 2.7vw;
-    top: 0;
+    top: -0.4vw;
+    left: 0.3vw;
   }
 }
 .questions {
@@ -2784,8 +2796,8 @@ section {
   .fixed-link__main-icon::after {
     height: 8.1vw;
     width: 2.7vw;
-    top: 0;
-    left: 0.2vw;
+    top: -0.4vw;
+    left: 0.3vw;
   }
 }
 @media (min-width: 48.01em) {
