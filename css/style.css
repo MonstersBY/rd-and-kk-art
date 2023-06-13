@@ -572,6 +572,9 @@ section {
   height: 100%;
   border-radius: 3.2rem;
 }
+.about-app__video #main-video-mobile {
+  display: none;
+}
 .about-app__video-start {
   display: none;
 }
@@ -813,6 +816,12 @@ section {
     border-radius: 6.134vw;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .about-app__video #main-video {
+    display: none;
+  }
+  .about-app__video #main-video-mobile {
+    display: inline;
   }
   .about-app__video-start {
     display: none;

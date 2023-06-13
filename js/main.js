@@ -87,8 +87,14 @@ const sliderReviewsMob = new Swiper(".reviews__swiper-mobile", {
   },
 })
 
+
 const videoPlayer = document.querySelector('.about-app__video')
-const video = videoPlayer.querySelector('#main-video')
+var video
+if(window.screen.width <= 769) {
+  video = videoPlayer.querySelector('#main-video-mobile')
+} else {
+  video = videoPlayer.querySelector('#main-video')
+}
 const playButton = videoPlayer.querySelector('#playpause')
 const mute = videoPlayer.querySelector('.about-app__video-controls-mute')
 const volume = videoPlayer.querySelector('.about-app__video-controls-volume')
@@ -188,7 +194,7 @@ progress.addEventListener('click', (e) =>{
 fs.addEventListener('click', (e) =>{
   if(fs.getAttribute('data-state') == 'go-fullscreen') {
     fullScreen(videoPlayer)
-    screen.orientation.lock('landscape').then(res=>console.log(res)).catch(err=>console.log(err))
+    // screen.orientation.lock('landscape').then(res=>console.log(res)).catch(err=>console.log(err))
   } else {
     closeFullscreen(videoPlayer)
   }

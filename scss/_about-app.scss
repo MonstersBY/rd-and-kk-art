@@ -89,6 +89,10 @@
             height: 100%;
             border-radius: 3.2rem;
         }
+        #main-video-mobile {
+            display: none;
+        }
+
         &-start {
             display: none;
         }
@@ -334,6 +338,12 @@
                 height: 100%;
                 border-radius: 6.134vw;
                 object-fit: cover;
+            }
+            #main-video {
+                display: none;
+            }
+            #main-video-mobile {
+                display: inline;
             }
             &-start {
                 display: none;
