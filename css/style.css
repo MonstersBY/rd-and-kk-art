@@ -2013,9 +2013,13 @@ section {
 }
 .student-work__img {
   width: 100%;
+  height: 43.8rem;
 }
 .student-work__img img {
   border-radius: 5.5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .student-work__btn-next, .student-work__btn-prev {
   background-image: url(../img/icon/arrowrightbrown.svg);
@@ -2152,6 +2156,7 @@ section {
   }
   .student-work__img {
     width: 100%;
+    height: 49rem;
   }
   .student-work__img img {
     border-radius: 8.5vw;
