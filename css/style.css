@@ -2457,13 +2457,15 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 4.5rem 4.4rem 5.1rem;
+    padding: 4rem 3.2rem 4rem;
+    height: 62.4vw;
   }
   .reviews__slide-text {
     font-weight: 500;
     font-size: 4vw;
     line-height: 120%;
     margin-bottom: 4.3vw;
+    -webkit-line-clamp: 6;
   }
   .reviews__slide-bottom {
     display: -webkit-box;

@@ -211,13 +211,15 @@
             border-radius: 8vw;
             display: flex;
             flex-direction: column;
-            padding: 4.5rem 4.4rem 5.1rem;
+            padding: 4rem 3.2rem 4rem;
+            height: 62.4vw;
     
             &-text {
                 font-weight: 500;
                 font-size: 4vw;
                 line-height: 120%;
                 margin-bottom: 4.3vw;
+                -webkit-line-clamp: 6;
             }
             &-bottom {
                 display: flex;
