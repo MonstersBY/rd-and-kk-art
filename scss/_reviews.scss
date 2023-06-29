@@ -260,7 +260,9 @@
         }
         &__pagination {
             bottom: -9vw;
-            left: 40vw;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
 
             .swiper-pagination-bullet {
                 width: 2vw;

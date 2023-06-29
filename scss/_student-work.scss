@@ -1,5 +1,9 @@
 .student-work {
     margin-bottom: 23rem;
+
+    .swiper-wrapper {
+        height: auto;
+    }
     
     .container {
         width: 100%;
@@ -78,7 +82,7 @@
     }
     &__img {
         width: 100%;
-        height: 43.8rem;
+        height: 70.8rem;
         
         img {
             border-radius: 5.5rem;
@@ -201,7 +205,7 @@
         }
         &__img {
             width: 100%;
-            height: 49rem;
+            height: 86rem;
 
             img {
                 border-radius: 8.5vw;
@@ -210,7 +214,9 @@
 
         &__pagination {
             bottom: -9vw;
-            left: 40vw;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
 
             .swiper-pagination-bullet {
                 width: 2vw;

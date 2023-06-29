@@ -1095,10 +1095,16 @@ section {
 .app-look__item.center {
   height: 102.4rem;
 }
+.app-look__pagination {
+  display: none;
+}
 
 @media (max-width: 48em) {
   .app-look {
     margin-bottom: 23rem;
+  }
+  .app-look .swiper-wrapper {
+    height: auto;
   }
   .app-look .container {
     width: 100%;
@@ -1132,8 +1138,11 @@ section {
     border-radius: 8vw;
   }
   .app-look__pagination {
+    display: block;
     bottom: -4vw;
-    left: 40vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .app-look__pagination .swiper-pagination-bullet {
     width: 2vw;
@@ -1922,6 +1931,9 @@ section {
 .student-work {
   margin-bottom: 23rem;
 }
+.student-work .swiper-wrapper {
+  height: auto;
+}
 .student-work .container {
   width: 100%;
   position: relative;
@@ -2013,7 +2025,7 @@ section {
 }
 .student-work__img {
   width: 100%;
-  height: 43.8rem;
+  height: 70.8rem;
 }
 .student-work__img img {
   border-radius: 5.5rem;
@@ -2156,14 +2168,16 @@ section {
   }
   .student-work__img {
     width: 100%;
-    height: 49rem;
+    height: 86rem;
   }
   .student-work__img img {
     border-radius: 8.5vw;
   }
   .student-work__pagination {
     bottom: -9vw;
-    left: 40vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .student-work__pagination .swiper-pagination-bullet {
     width: 2vw;
@@ -2512,7 +2526,9 @@ section {
   }
   .reviews__pagination {
     bottom: -9vw;
-    left: 40vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .reviews__pagination .swiper-pagination-bullet {
     width: 2vw;

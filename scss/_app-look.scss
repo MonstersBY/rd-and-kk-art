@@ -35,11 +35,18 @@
             height: 102.4rem;
         }
     }
+    &__pagination {
+        display: none;
+    }
 }
 
 @media (max-width: 48em) {
     .app-look {
         margin-bottom: 23rem;
+
+        .swiper-wrapper {
+            height: auto;
+        }
     
         .container {
             width: 100%;
@@ -70,8 +77,11 @@
             }
         }
         &__pagination {
+            display: block;
             bottom: -4vw;
-            left: 40vw;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
 
             .swiper-pagination-bullet {
                 width: 2vw;
