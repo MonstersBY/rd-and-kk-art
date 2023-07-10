@@ -178,22 +178,23 @@
             &-rating {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
     
                 &-icon {
                     width: 7.2vw;
                     height: 7.2vw;
-                    margin-right: 1.1vw;
+                    margin-right: 0;
                     margin-top: 0;
                 }
                 &-number {
                     font-size: 8vw;
                     line-height: 125%;
-                    margin-right: 3.2vw;
+                    margin-right: 0;
                 }
                 &-line {
                     height: 6.7vw;
                     width: 2px;
-                    margin-right: 2.13vw;
+                    margin-right: 0;
                 }
                 &-text {
                     width: 55vw;

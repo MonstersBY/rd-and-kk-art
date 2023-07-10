@@ -2435,22 +2435,25 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .reviews__head-rating-icon {
     width: 7.2vw;
     height: 7.2vw;
-    margin-right: 1.1vw;
+    margin-right: 0;
     margin-top: 0;
   }
   .reviews__head-rating-number {
     font-size: 8vw;
     line-height: 125%;
-    margin-right: 3.2vw;
+    margin-right: 0;
   }
   .reviews__head-rating-line {
     height: 6.7vw;
     width: 2px;
-    margin-right: 2.13vw;
+    margin-right: 0;
   }
   .reviews__head-rating-text {
     width: 55vw;
